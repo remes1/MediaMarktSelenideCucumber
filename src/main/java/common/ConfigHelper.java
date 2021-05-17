@@ -26,7 +26,7 @@ public class ConfigHelper {
     }
 
     public String GetConfigValue(String valueKey) {
-        String config = "Unkown";
+        String config = "Unknown";
         String prop =
                 System.getProperty("Config");
 
@@ -35,10 +35,6 @@ public class ConfigHelper {
                 System.out.println("Prod Configuration found!");
                 config = configLocation + "Prod.json";
             }
-        } else {
-            System.out.println("No Config Found! May use -DConfig for configuration. Using Default Abnahme");
-            System.setProperty("Config", "abnahme");
-            config = configLocation + "AbnahmeConfig.json";
         }
         return ReadConfig(config, valueKey);
 
