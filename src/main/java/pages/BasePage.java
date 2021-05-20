@@ -2,12 +2,11 @@ package pages;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
-import common.ConstructorClass;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$x;
 
-public class BasePage extends ConstructorClass {
+public class BasePage{
     private static BasePage basePage = null;
 
     public static BasePage getInstance() {

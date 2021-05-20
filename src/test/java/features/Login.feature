@@ -1,4 +1,4 @@
-#@smoke
+@smoke
 Feature: Login
 
   Scenario: Check login functionality
