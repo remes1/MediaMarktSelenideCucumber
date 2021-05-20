@@ -11,6 +11,7 @@
     <properties>
         <cucumber.version>4.8.0</cucumber.version>
         <junit.version>5.6.0</junit.version>
+        <selenide.version>5.20.4</selenide.version>
         <aspectj.version>1.8.10</aspectj.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -47,7 +48,7 @@
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
-            <version>5.20.4</version>
+            <version>${selenide.version}</version>
         </dependency>
 
         <dependency>
