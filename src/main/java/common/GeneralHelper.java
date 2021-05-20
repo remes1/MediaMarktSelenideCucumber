@@ -2,6 +2,8 @@ package common;
 
 import org.apache.commons.codec.binary.Base64;
 
+import java.util.Random;
+
 public class GeneralHelper {
     private static GeneralHelper generalHelper = null;
 
@@ -15,6 +17,12 @@ public class GeneralHelper {
     public String decodeString(String encodedString) {
         byte[] decoded = Base64.decodeBase64(encodedString);
         return new String(decoded);
+    }
+
+    public String generateEmail() {
+        Random r = new Random();
+        int ramNum = r.nextInt(1000);
+        return "username" + ramNum + "@gmail.com";
     }
 
 }

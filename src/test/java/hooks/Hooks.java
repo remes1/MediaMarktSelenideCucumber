@@ -19,23 +19,16 @@ public class Hooks {
     //            switch (browserconfig.toLowerCase()) {
 //
     //                case "firefox":
-    //                    Configuration.browserBinary = confighelper.GetBrowserConfig("BinaryFirefox");
     //                    Configuration.browser = "firefox";
     //                    System.out.println("firefox Browser is used!");
     //                    break;
     //                case "edge":
-    //                    Configuration.browserBinary = confighelper.GetBrowserConfig("BinaryEdge");
     //                    Configuration.browser = "edge";
     //                    System.out.println("edge Browser is used!");
     //                    break;
     //                default:
-    //                    //  Configuration.browserBinary = confighelper.GetBrowserConfig("BinaryChrome");
     //                    Configuration.browser = "chrome";
-    //                    if (System.getProperty("BROWSER").toLowerCase().equals("chrome")) {
-    //                        System.out.println("Chrome Browser is used!");
-    //                    } else {
-    //                        System.out.println("Browser not known!. Default Chrome Browser is used!");
-    //                    }
+    //                    System.out.println("Chrome Browser is used!");
     //                    break;
     //            }
     //        }

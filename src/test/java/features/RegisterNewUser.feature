@@ -1,4 +1,4 @@
-#@smoke
+@smoke
 Feature: Registration of new user
 
   Scenario: Register new user

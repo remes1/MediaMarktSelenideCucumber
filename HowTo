@@ -1,0 +1,7 @@
+---------------------------------------------------------------------------------------------------------------------------------------
+HOW TO
+---------------------------------------------------------------------------------------------------------------------------------------
+
+to run tests from "prod" environment use the command (tests will be executed in chrome by default) - mvn clean test "-Dcucumber.options=--tags @smoke" -DConfig=prod
+
+to run tests from "prod" environment in firefox - mvn clean test "-Dcucumber.options=--tags @smoke" -DConfig=prod -Dselenide.browser=firefox
