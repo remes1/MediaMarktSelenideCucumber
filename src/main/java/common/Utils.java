@@ -19,7 +19,7 @@ public class Utils {
         return utils;
     }
 
-    public void sleep(int i) throws InterruptedException {
+    public void sleep(long i) throws InterruptedException {
 
         try {
             Thread.sleep(i * 1000);
