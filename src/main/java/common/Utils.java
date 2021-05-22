@@ -5,6 +5,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.NoSuchFrameException;
 
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 import static com.codeborne.selenide.Selenide.switchTo;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
@@ -20,12 +21,7 @@ public class Utils {
     }
 
     public void sleep(long i) throws InterruptedException {
-
-        try {
-            Thread.sleep(i * 1000);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        TimeUnit.SECONDS.sleep(i);
     }
 
     public void setResolution(int width, int height) {
