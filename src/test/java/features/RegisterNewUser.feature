@@ -12,5 +12,9 @@ Feature: Registration of new user
     When I click on button "Registrieren"
     Then I see heading with text "Neuer Kunde?"
     When I select a gender
-
-    #TODO
+    And I enter first name "Max"
+    And I enter last name "Musterman"
+    And I enter registration email "username-"
+    And I enter registration password "Test123!"
+    And I click on button "Jetzt registrieren"
+    Then I wait until button "Jetzt registrieren" disappears

@@ -45,4 +45,9 @@ public class CommonSteps extends ConstructorClass {
     public void iSeeButton(String buttonText) {
         Assertions.assertTrue(basePage.buttonWithTextIsVisible(buttonText));
     }
+
+    @Then("I wait until button {string} disappears")
+    public void iWaitUntilButtonDisappears(String buttonText) {
+        basePage.waitUntilButtonWithTextDisappear(buttonText);
+    }
 }

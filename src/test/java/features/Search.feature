@@ -1,4 +1,4 @@
-#@smoke
+@smoke
 Feature: Search
 
   Scenario: Check search

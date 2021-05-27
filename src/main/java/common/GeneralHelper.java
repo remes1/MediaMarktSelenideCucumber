@@ -22,7 +22,7 @@ public class GeneralHelper {
     public String generateEmail() {
         Random r = new Random();
         int ramNum = r.nextInt(1000);
-        return "username" + ramNum + "@gmail.com";
+        return ramNum + "@gmail.com";
     }
 
 }
