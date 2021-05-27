@@ -40,15 +40,6 @@ public class ConfigHelper {
 
     }
 
-    public String GetBrowserConfig(String value) {
-        return ReadConfig(configLocation + "BrowserLocalConfig.json", value);
-    }
-
-    public String GetSystemConfig(String value) {
-        return ReadConfig(configLocation + "SystemConfig.json", value);
-    }
-
-
     public String ReadConfig(String config, String valueKey) {
         JSONParser parser = new JSONParser();
         try {
