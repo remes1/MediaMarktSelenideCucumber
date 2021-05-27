@@ -48,6 +48,6 @@ public class CommonSteps extends ConstructorClass {
 
     @Then("I wait until button {string} disappears")
     public void iWaitUntilButtonDisappears(String buttonText) {
-        basePage.waitUntilButtonWithTextDisappear(buttonText);
+        basePage.waitUntilButtonWithTextDisappears(buttonText);
     }
 }

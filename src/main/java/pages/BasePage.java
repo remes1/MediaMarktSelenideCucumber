@@ -38,7 +38,7 @@ public class BasePage{
         $x("//*[self::h1 or self::h2 or self::h3 or self::h4][contains(text(),'" + text + "')]").shouldBe(visible);
     }
 
-    public void waitUntilButtonWithTextDisappear(String buttonText){
+    public void waitUntilButtonWithTextDisappears(String buttonText){
         $x("//button[text()= '" + buttonText + "']").should(Condition.disappear);
     }
 
